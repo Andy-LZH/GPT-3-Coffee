@@ -1,0 +1,158 @@
+Last login: Mon May 16 18:06:43 on ttys000
+❯ code /Users/andylee/Desktop/UC\ Davis/2022\ SQ/ECS\ 289G/GPT-3-Coffee/data/raw/prep_process_json.py
+❯ cd Desktop/UC\ Davis/2022\ SQ/ECS\ 289G/GPT-3-Coffee/data/processed
+❯ ls
+test.csv            test.json           test_prepared.jsonl
+❯ openai tools fine_tunes.prepare_data -f test.json
+Analyzing...
+
+- Your file contains 11069 prompt-completion pairs
+- There are 49 duplicated prompt-completion sets. These are rows: [22, 24, 35, 49, 80, 94, 128, 218, 219, 246, 259, 298, 314, 340, 341, 367, 368, 369, 370, 372, 387, 393, 442, 492, 497, 503, 532, 534, 611, 618, 619, 677, 689, 741, 742, 798, 804, 807, 867, 872, 874, 883, 913, 975, 1018, 1019, 1045, 1046, 1062]
+- Your data does not contain a common separator at the end of your prompts. Having a separator string appended to the end of the prompt makes it clearer to the fine-tuned model where the completion should begin. See https://beta.openai.com/docs/guides/fine-tuning/preparing-your-dataset for more detail and examples. If you intend to do open-ended generation, then you should leave the prompts empty
+- All prompts start with prefix `Region: `
+- All completions start with prefix `Flavors: `. Most of the time you should only add the output data into the completion, without any prefix
+- All completions end with suffix `\n`
+- The completion should start with a whitespace character (` `). This tends to produce better results due to the tokenization we use. See https://beta.openai.com/docs/guides/fine-tuning/preparing-your-dataset for more details
+
+Based on the analysis we will perform the following actions:
+- [Recommended] Remove 49 duplicate rows [Y/n]: Y
+- [Recommended] Add a suffix separator ` ->` to all prompts [Y/n]: Y
+/Users/andylee/miniforge3/lib/python3.9/site-packages/openai/validators.py:215: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x["prompt"] += suffix
+- [Recommended] Remove prefix `Flavors: ` from all completions [Y/n]: n
+- [Recommended] Add a whitespace character to the beginning of the completion [Y/n]: n
+
+
+Your data will be written to a new JSONL file. Proceed [Y/n]: Y
+
+Wrote modified file to `test_prepared (1).jsonl`
+Feel free to take a look!
+
+Now use that file when fine-tuning:
+> openai api fine_tunes.create -t "test_prepared (1).jsonl"
+
+After you’ve fine-tuned a model, remember that your prompt has to end with the indicator string ` ->` for the model to start generating completions, rather than continuing with the prompt. Make sure to include `stop=["\n"]` so that the generated texts ends at the expected place.
+Once your model starts training, it'll approximately take 7.6 hours to train a `curie` model, and less for `ada` and `babbage`. Queue will approximately take half an hour per job ahead of you.
+❯ openai tools fine_tunes.prepare_data -f test.json
+Analyzing...
+
+- Your file contains 11069 prompt-completion pairs
+- There are 49 duplicated prompt-completion sets. These are rows: [22, 24, 35, 49, 80, 94, 128, 218, 219, 246, 259, 298, 314, 340, 341, 367, 368, 369, 370, 372, 387, 393, 442, 492, 497, 503, 532, 534, 611, 618, 619, 677, 689, 741, 742, 798, 804, 807, 867, 872, 874, 883, 913, 975, 1018, 1019, 1045, 1046, 1062]
+- Your data does not contain a common separator at the end of your prompts. Having a separator string appended to the end of the prompt makes it clearer to the fine-tuned model where the completion should begin. See https://beta.openai.com/docs/guides/fine-tuning/preparing-your-dataset for more detail and examples. If you intend to do open-ended generation, then you should leave the prompts empty
+- All prompts start with prefix `Region: `
+- All completions start with prefix `Flavors: `. Most of the time you should only add the output data into the completion, without any prefix
+- All completions end with suffix `\n`
+- The completion should start with a whitespace character (` `). This tends to produce better results due to the tokenization we use. See https://beta.openai.com/docs/guides/fine-tuning/preparing-your-dataset for more details
+
+Based on the analysis we will perform the following actions:
+- [Recommended] Remove 49 duplicate rows [Y/n]: Y
+- [Recommended] Add a suffix separator ` ->` to all prompts [Y/n]: Y
+/Users/andylee/miniforge3/lib/python3.9/site-packages/openai/validators.py:215: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x["prompt"] += suffix
+- [Recommended] Remove prefix `Flavors: ` from all completions [Y/n]: n
+- [Recommended] Add a whitespace character to the beginning of the completion [Y/n]: Y
+/Users/andylee/miniforge3/lib/python3.9/site-packages/openai/validators.py:414: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x["completion"] = x["completion"].apply(
+
+
+Your data will be written to a new JSONL file. Proceed [Y/n]: Y
+
+Wrote modified file to `test_prepared.jsonl`
+Feel free to take a look!
+
+Now use that file when fine-tuning:
+> openai api fine_tunes.create -t "test_prepared.jsonl"
+
+After you’ve fine-tuned a model, remember that your prompt has to end with the indicator string ` ->` for the model to start generating completions, rather than continuing with the prompt. Make sure to include `stop=["\n"]` so that the generated texts ends at the expected place.
+Once your model starts training, it'll approximately take 7.6 hours to train a `curie` model, and less for `ada` and `babbage`. Queue will approximately take half an hour per job ahead of you.
+❯ openai tools fine_tunes.prepare_data -f test.json
+Analyzing...
+
+- Your file contains 11069 prompt-completion pairs
+- There are 49 duplicated prompt-completion sets. These are rows: [22, 24, 35, 49, 80, 94, 128, 218, 219, 246, 259, 298, 314, 340, 341, 367, 368, 369, 370, 372, 387, 393, 442, 492, 497, 503, 532, 534, 611, 618, 619, 677, 689, 741, 742, 798, 804, 807, 867, 872, 874, 883, 913, 975, 1018, 1019, 1045, 1046, 1062]
+- Your data does not contain a common separator at the end of your prompts. Having a separator string appended to the end of the prompt makes it clearer to the fine-tuned model where the completion should begin. See https://beta.openai.com/docs/guides/fine-tuning/preparing-your-dataset for more detail and examples. If you intend to do open-ended generation, then you should leave the prompts empty
+- All prompts start with prefix `Region: `
+- All completions start with prefix `Flavors: `. Most of the time you should only add the output data into the completion, without any prefix
+- All completions end with suffix `\n`
+- The completion should start with a whitespace character (` `). This tends to produce better results due to the tokenization we use. See https://beta.openai.com/docs/guides/fine-tuning/preparing-your-dataset for more details
+
+Based on the analysis we will perform the following actions:
+- [Recommended] Remove 49 duplicate rows [Y/n]: Y
+- [Recommended] Add a suffix separator ` ->` to all prompts [Y/n]: Y
+/Users/andylee/miniforge3/lib/python3.9/site-packages/openai/validators.py:215: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  x["prompt"] += suffix
+- [Recommended] Remove prefix `Flavors: ` from all completions [Y/n]: n
+- [Recommended] Add a whitespace character to the beginning of the completion [Y/n]: n
+
+
+Your data will be written to a new JSONL file. Proceed [Y/n]: Y
+
+Wrote modified file to `test_prepared.jsonl`
+Feel free to take a look!
+
+Now use that file when fine-tuning:
+> openai api fine_tunes.create -t "test_prepared.jsonl"
+
+After you’ve fine-tuned a model, remember that your prompt has to end with the indicator string ` ->` for the model to start generating completions, rather than continuing with the prompt. Make sure to include `stop=["\n"]` so that the generated texts ends at the expected place.
+Once your model starts training, it'll approximately take 7.6 hours to train a `curie` model, and less for `ada` and `babbage`. Queue will approximately take half an hour per job ahead of you.
+❯ openai api fine_tunes.create -t test_prepared.jsonl -m "text-davinci-002"
+Error: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+❯ OPENAI_API_KEY="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"
+❯ openai api fine_tunes.create -t test_prepared.jsonl -m "text-davinci-002"
+Error: No API key provided. You can set your API key in code using 'openai.api_key = <API-KEY>', or you can set the environment variable OPENAI_API_KEY=<API-KEY>). If your API key is stored in a file, you can point the openai module at it with 'openai.api_key_path = <PATH>'. You can generate API keys in the OpenAI web interface. See https://onboard.openai.com for details, or email support@openai.com if you have any questions.
+❯ $OPENAI_API_KEY="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"
+zsh: command not found: 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=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
+❯ openai.api_key = "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"
+zsh: command not found: openai.api_key
+❯ OPENAI_API_KEY=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
+❯ openai.api_key = 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
+zsh: command not found: openai.api_key
+❯ export OPENAI_API_KEY="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"
+❯ openai api fine_tunes.create -t test_prepared.jsonl -m "text-davinci-002"
+Upload progress: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.19M/2.19M [00:00<00:00, 1.22Git/s]
+Uploaded file from test_prepared.jsonl: file-hhzmot2a3qXwGhyo8peQFuP6
+[organization=uc-davis-17] Error: Invalid base model: text-davinci-002 (model must be one of ada, babbage, curie, davinci) or a fine-tuned model created by your organization: org-1GMabLH8QlvqRQNaKecJTbqn (HTTP status code: 400)
+❯ openai api fine_tunes.create -t test_prepared.jsonl -m "davinci"
+Found potentially duplicated files with name 'test_prepared.jsonl', purpose 'fine-tune' and size 2193311 bytes
+file-hhzmot2a3qXwGhyo8peQFuP6
+Enter file ID to reuse an already uploaded file, or an empty string to upload this file anyway: 
+Upload progress: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.19M/2.19M [00:00<00:00, 1.46Git/s]
+Uploaded file from test_prepared.jsonl: file-lL4EYwR6QKmuhaZ8xsIhrkUf
+Created fine-tune: ft-9tRNM9bIJA965FLEsPJpOJ8D
+Streaming events until fine-tuning is complete...
+
+(Ctrl-C will interrupt the stream, but not cancel the fine-tune)
+[2022-05-18 21:21:10] Created fine-tune: ft-9tRNM9bIJA965FLEsPJpOJ8D
+[2022-05-18 21:21:22] Fine-tune costs $65.03
+[2022-05-18 21:21:22] Fine-tune enqueued. Queue number: 1
+
+
+Stream interrupted (client disconnected).
+To resume the stream, run:
+
+  openai api fine_tunes.follow -i ft-9tRNM9bIJA965FLEsPJpOJ8D
+
+❯ 
+❯  openai api fine_tunes.follow -i ft-9tRNM9bIJA965FLEsPJpOJ8D
+
+[2022-05-18 21:21:10] Created fine-tune: ft-9tRNM9bIJA965FLEsPJpOJ8D
+[2022-05-18 21:21:22] Fine-tune costs $65.03
+[2022-05-18 21:21:22] Fine-tune enqueued. Queue number: 1
+[2022-05-18 21:32:02] Fine-tune is in the queue. Queue number: 0
+
