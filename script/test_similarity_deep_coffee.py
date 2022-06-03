@@ -1,5 +1,6 @@
 import openai
 import csv
+import os
 import numpy as np
 import sentence_transformers.util
 from sentence_transformers import SentenceTransformer
@@ -9,7 +10,7 @@ import transformers
 
 from scipy.spatial.distance import cosine
 
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 if __name__ == "__main__":
     f_in = open("../data/processed/test.csv")
