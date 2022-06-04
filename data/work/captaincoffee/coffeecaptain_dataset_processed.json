@@ -1,0 +1,224 @@
+{
+    "data": [
+        {
+            "Flavors": " Licorice, anise, molasses and mango",
+            "Altitude": "Very hard and dense, grown at 1300-1650 masl",
+            "Process": " Wet-hulled (giling basah) and patio dried in the sun",
+            "Region": " Kerinci Regency, Jambi Province, Sumatra",
+            "Variety": " Bourbon, Catimor, Gayo, S Lini 795"
+        },
+        {
+            "Flavors": " Dark chocolate, cane sugar, papaya and lime. ",
+            "Altitude": " Excelso, Grown at 1560-2010 masl",
+            "Process": " Fully washed and dried inside solar dryers",
+            "Region": " Gaitania, Planadas, Tolima",
+            "Variety": " Bourbon, Caturra, Castillo, Colombia, Gesha, F8, and Tabi"
+        },
+        {
+            "Flavors": " Peach, grapefruit, honey, cocoa and cardamom",
+            "Altitude": " SHB, grown at 1500 masl",
+            "Process": " Fully washed after pulping and fermenting. Dried on patios for 18 days",
+            "Region": " Birri, Santa Bárbara, Heredia",
+            "Variety": " Red Catuai and Caturra"
+        },
+        {
+            "Flavors": " Green apple, raspberry, marshmallow, lavender and dark chocolate",
+            "Altitude": " SHB, grown at 1500 masl",
+            "Process": "Fully washed and sun dried",
+            "Region": " Caranavi, La Paz, Bolivia",
+            "Variety": " Typica, Catuai and Caturra"
+        },
+        {
+            "Flavors": " Milk chocolate, caramel, honey, cherry and a hint of lilac",
+            "Altitude": " Excelso, SHG - Strictly High Grown",
+            "Process": " Fully washed, EA (sugar cane) decaffeinated "
+        },
+        {
+            "Flavors": " Pink grapefruit, tropical fruit, honey and a floral undertone",
+            "Altitude": "Excelso, Grown at 1700-1900 masl",
+            "Process": " Honey process, depulped and fermented for 12 hours and dried between 20-25 days inside solar dryers that provide protection from the rain",
+            "Region": " Pitalito, Huila",
+            "Variety": " Gesha (Geisha)"
+        },
+        {
+            "Flavors": "Baker's chocolate, butterscotch, cedar and vanilla",
+            "Altitude": "Grade 1, grown at 1400-2000 masl",
+            "Process": "Wet-hulled (Giling Basah), hand picked & sun dried",
+            "Variety": " Typica, Catimor, S-795"
+        },
+        {
+            "Flavors": " Dark chocolate, walnut, brown sugar and grape.",
+            "Altitude": "SHB, grown at 1650-1950 masl",
+            "Process": "Fully Washed and sun dried",
+            "Region": " Antigua Guatemala, Sacatepéquez Department",
+            "Variety": "Bourbon, Caturra and Typica"
+        },
+        {},
+        {},
+        {
+            "Flavors": "Baker's chocolate, cedar, vanilla and cinnamon",
+            "Altitude": "Very hard and dense, grown at 1200-1600 masl",
+            "Process": "Wet-hulled (semi-washed), dried on raised beds",
+            "Region": " Kintamani Highlands of Central Bali, Indonesia",
+            "Variety": "Bourbon, Typica & Catimor"
+        },
+        {
+            "Flavors": " Cherry, candied orange, anise & milk chocolate",
+            "Altitude": "Very hard and dense, grown at 1200-1600 meters",
+            "Process": " Natural Processed",
+            "Region": " Kintamani Highlands of Central Bali, Indonesia",
+            "Variety": " Bourbon, Typica and Catimor"
+        },
+        {
+            "Flavors": " Cocoa powder, malt, peanuts & hints of lemon",
+            "Altitude": " 17/18 Screen, FC/SS (Fine cup/strictly soft), highest category in Brazil, grown at 850-1100 masl",
+            "Process": "Natural (dry) processed, sun dried",
+            "Region": " Yellow Bourbon, Mundo Novo, and Obatã",
+            "Variety": "Bourbon, Mundo Novo and Obatã"
+        },
+        {},
+        {},
+        {
+            "Flavors": " Pineapple, guava, caramel & dark chocolate",
+            "Altitude": " Very large (larger than supremo), Grown at 1750-1950 masl",
+            "Process": " Fully washed and dried on patios and elevated tables inside solar dryers that provide protection from the rain",
+            "Region": " La Argentina, Salado, and Blanco, Huila",
+            "Variety": " Pacamara"
+        },
+        {
+            "Flavors": " Grape, mango, peach & graham cracker",
+            "Altitude": " Maragogype (bigger than Supremo), grown at 1700-2000 masl",
+            "Process": " Honey processed",
+            "Region": " Southern Huila",
+            "Variety": " Maragogype"
+        },
+        {
+            "Flavors": " Cocoa powder, maple syrup & lemon zest",
+            "Altitude": "SHG & Excelso",
+            "Process": "Wet (European Prep/Washed, then water decaffienated)"
+        },
+        {
+            "Flavors": " Nectarine, mixed berries, tropical fruit & oak",
+            "Altitude": "SHG (Strictly high Grown) very dense, grown at 1900-2100 masl",
+            "Process": " Natural processed",
+            "Variety": " Typica",
+            "Region": " Saraguro, Loja Province, Ecuador"
+        },
+        {
+            "Flavors": " Dark chocolate brownie, caramel, hazelnut",
+            "Altitude": "SHG (Strictly high Grown) very dense, grown at 1600-1800 masl",
+            "Process": " Fully washed and dried on raised beds.",
+            "Region": " Taisha, Morona Santiago, Ecuador",
+            "Variety": " Local Arabica Cultivars"
+        },
+        {
+            "Flavors": " Blueberry, blackberry, star anise & granola",
+            "Altitude": "Grade 1, grown at 1990-2150 masl",
+            "Process": " Natural, sun dried on raised beds",
+            "Region": " Bombe Municipality, Sidama Zone",
+            "Variety": " Ethiopian"
+        },
+        {
+            "Flavors": " Blueberry, blackberry, dark chocolate & hibiscus",
+            "Altitude": "Grade 1 grown at 1900-2300 masl",
+            "Process": " Natural processed, sun dried on raised beds",
+            "Region": " Gedeo (Yirgacheffe) Zone",
+            "Variety": " Regional landraces and heirloom cultivars"
+        },
+        {
+            "Flavors": " Lavender, jasmine, lemonade and plum",
+            "Altitude": "Grade 1 grown at 2000-2200 masl",
+            "Process": "Fully Washed, sun dried on raised tables",
+            "Region": " Gedeb District, Gedeo (Yirgacheffe) Zone",
+            "Variety": "Kurume, a local heirloom cultivar, and regional Ethiopian cultivars 74110 & 74112"
+        },
+        {
+            "Flavors": " Sparkling lemon, juicy peach, hops and rose",
+            "Altitude": "Grade 0 (zero defects), grown at 2050-2100 masl",
+            "Process": "Fully Washed, sun dried on raised beds and milled to zero defects",
+            "Region": " Worka-Sakaro kebele, Gedeb District, Gedeo Zone, Southern Nations, Nationalities, and Peoples' Region",
+            "Variety": "Heirloom"
+        },
+        {},
+        {},
+        {
+            "Flavors": "Dark chocolate, black cherry, allspice and tobacco",
+            "Altitude": "Hard and Dense, Elevation 900-1600 masl",
+            "Process": " Wet-hulled (semi washed),hand picked, sun dried on bamboo mat",
+            "Region": " Curah Tatal & Kayumas villages located on the Ijen Plateau in Eastern Java, Indonesia",
+            "Variety": "S-795 (A Typica hybrid)"
+        },
+        {
+            "Flavors": " Maple syrup, plum, baker's chocolate with a hint of spice",
+            "Altitude": " Varied blend, high grown, very hard and dense",
+            "Process": "Wet-hulled and washed blend, Swiss Water Processed"
+        },
+        {
+            "Flavors": " Meyer lemon, kiwi, dark chocolate and a hint of basil and wine",
+            "Altitude": " Peaberry, grown at 1350 masl",
+            "Process": " Fully washed and sun dried",
+            "Region": " Tambul-Nebilyer District",
+            "Variety": " Bourbon and typica"
+        },
+        {
+            "Flavors": " Orange peel, cola and cocoa powder",
+            "Altitude": "SHB, grown at 1500-1900 masl",
+            "Process": " Fully Washed, hand-picked, sun dried",
+            "Region": "San Ignacio, Cajamarca",
+            "Variety": " Bourbon, Catimor, Caturra, Pache, and Typica"
+        },
+        {
+            "Flavors": "Milk chocolate,caramel, mild lemon",
+            "Altitude": "SHG (Strictly High Grown), grown at 1250-1800 masl",
+            "Process": "Fully Washed",
+            "Region": " San Ignacio, Cajamarca",
+            "Variety": " Typica, Caturra, Pache, Mondo Novo, Bourbon"
+        },
+        {
+            "Flavors": " Pear, honeydew, lime and a touch of jasmine",
+            "Altitude": "A, grown at 1800 masl",
+            "Process": "Fully Washed, dried on raised beds",
+            "Region": " Nyamasheke District, Western Province",
+            "Variety": " Local Bourbon varieties"
+        },
+        {
+            "Flavors": " Nectarine, orange, cane sugar, walnut & hibiscus",
+            "Altitude": "A",
+            "Process": "Fully Washed, dried on raised beds",
+            "Region": " Gihombo Sector, Nyamasheke District",
+            "Variety": " Local Bourbon varieties"
+        },
+        {
+            "Flavors": " Strawberry jam, fig, milk chocolate and a touch of clove",
+            "Altitude": " 13/14, grown at 1500-1850 masl",
+            "Process": " Natural (dry) processed, sun dried",
+            "Region": "Ngoma Village, Nyamasheke District, Western Province",
+            "Variety": " Local Bourbon varieties"
+        },
+        {
+            "Flavors": " Guava, pineapple, blackberry & cocoa",
+            "Altitude": "Grade 1, grown at 1400-1800 masl",
+            "Process": " Full natural and dried on raised beds",
+            "Region": " Tana Toraja Regency, South Sulawesi, Indonesia",
+            "Variety": " Typica, Catimor, S-795"
+        },
+        {
+            "Flavors": "Dark chocolate, vanilla,peanuts,cedar,cherry",
+            "Altitude": "Blend of SHB and HB",
+            "Process": "Blend of fully washed and natural process"
+        },
+        {
+            "Flavors": "Cocoa, walnuts and caramel.",
+            "Altitude": "Blend of SHB and HB",
+            "Process": "Blend of fully washed and natural process"
+        },
+        {},
+        {},
+        {
+            "Flavors": " Milk chocolate, toffee, melon and peach",
+            "Altitude": "Very hard and dense, grown at 1500-1700 masl",
+            "Process": "Fully Washed and dried on raised beds",
+            "Variety": "Typica and Timor Hybrid"
+        }
+    ]
+}
